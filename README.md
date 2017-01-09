@@ -1,4 +1,12 @@
-# UE4Server
+# UE4DedicatedServer
+
+* 使用アセット
+  * Animation Starter Pack
+    * https://www.unrealengine.com/marketplace/animation-starter-pack
+  
+* XXXX**Server**.Target.cs を作成した (基本 XXXX**Editor**.Target.cs をコピーして作成)
+  * Visual Studio を開いてコンフィギュレーションを Development Server にしてビルド
+    * Binaries/Win64/XXXXServer.exe へ実行ファイルが作成される
 
 * パッケージ化
   * File - Package Project - Package Settings でパッケージ化の設定
@@ -8,15 +16,11 @@
       * Create compressed coocked packages
   * File - Package Project - Windows - Windows (64bit) - 出力先ディレクトリを指定して出力
     * ここでは Package ディレクトリを作成して指定した
-  
-* XXXX**Server**.Target.cs を作成 (基本 XXXX**Editor**.Target.cs をコピーして作成)
-  * .uproject 右クリック - Generate Visual Studio project files
-* Visual Studio を開いてコンフィギュレーションを Development Server にしてビルド
-  * Binaries/Win64/XXXXServer.exe へ実行ファイルが作成される
+
 * 実行ファイルを**パッケージ化先ディレクトリ**へコピーする
-  * ここでは CopyDedicatedServer.bat を作成した
+  * ここでは CopyDedicatedServer.bat を作成して実行
+
 * サーバとクライアントを起動する
-  * ここでは ExecuteDedicatedServerAndClient.bat を作成した
-  * -log をつけるとログウィンドウが出る
+  * ここでは ExecuteDedicatedServerAndClient.bat を作成して実行
   * クライアントのコンソール(@)から `open 127.0.0.1`
-  * サーバに入れたら(地面が赤いマップへ移動)成功
+    * サーバに入れたら(地面が赤いマップへ移動したら)成功

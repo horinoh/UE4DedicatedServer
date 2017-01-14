@@ -7,4 +7,4 @@
 
 @rem On client, input "open 127.0.0.1" from console
 start %DST%\%SERVER% -log
-start %DST%\%CLIENT% -log
+start %DST%\%CLIENT% -log -ResX=640 -ResY=360

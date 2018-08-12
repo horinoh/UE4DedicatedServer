@@ -8,7 +8,7 @@
 @set SERVER=UE4DedicatedServerServer.exe
 
 @rem Cooked data output directory
-@set DST=Package\WindowsNoEditor\UE4DedicatedServer\Binaries\Win64
+@set DST=WindowsNoEditor\UE4DedicatedServer\Binaries\Win64
 
 xcopy %SRC%\%SERVER% %DST% /Y
 
